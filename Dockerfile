@@ -1,5 +1,6 @@
 FROM python:3.9-alpine
 
+ENV ANSIBLE_VER=2.10.6
 ENV EASZLAB_ANSIBLE_TAG=2.10.6
 
 RUN set -x \
