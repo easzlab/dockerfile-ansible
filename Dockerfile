@@ -1,7 +1,7 @@
-FROM python:3.9-alpine
+FROM python:3.11-alpine
 
-ENV ANSIBLE_VER=2.10.6
-ENV EASZLAB_ANSIBLE_TAG=2.10.6
+ENV ANSIBLE_VER=2.14.4
+ENV EASZLAB_ANSIBLE_TAG=2.14.4
 
 RUN set -x \
        # Build dependencies
@@ -30,4 +30,4 @@ RUN set -x \
     && rm -rf /root/.cache \
     && rm -rf /root/.cargo
 
-CMD [ "sleep", "360000000" ]
+CMD [ "tail", "-f", "/dev/null" ]

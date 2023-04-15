@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - '2.10.**'
+      - '*.*.*'
 
 jobs:
   docker:
