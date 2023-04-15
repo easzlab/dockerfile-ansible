@@ -1,7 +1,7 @@
 FROM python:3.11-alpine
 
 ENV ANSIBLE_VER=2.14.4
-ENV EASZLAB_ANSIBLE_TAG=2.14.4
+ENV EASZLAB_ANSIBLE_TAG=2.14.4-core
 
 RUN set -x \
        # Build dependencies
@@ -20,7 +20,7 @@ RUN set -x \
         rsync \
     && pip install pip --upgrade \
     && pip install --no-cache-dir \
-        ansible=="$ANSIBLE_VER" \
+        ansible-core=="$ANSIBLE_VER" \
        # Some module need '/usr/bin/python' exist
     && ln -s -f /usr/local/bin/python3 /usr/bin/python \
     && ln -s -f /usr/local/bin/python3 /usr/bin/python3 \
