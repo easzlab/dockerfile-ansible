@@ -1,7 +1,7 @@
 FROM python:3.11-alpine
 
 ENV ANSIBLE_CORE_VER=2.14.4
-ENV EASZLAB_ANSIBLE_TAG=2.14-lite
+ENV EASZLAB_ANSIBLE_TAG=2.14.4-lite
 
 RUN set -x \
        # Build dependencies
