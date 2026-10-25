@@ -11,13 +11,13 @@ jobs:
       matrix:
         include:
           - dockerfile: ./Dockerfile
-            tag: 14.5.0
+            tag: 2.16.19
             ctx: .
           - dockerfile: ./Dockerfile-lite
-            tag: 14.5.0-lite
+            tag: 2.16.19-lite
             ctx: .
           - dockerfile: ./Dockerfile-core
-            tag: 2.21.5-core
+            tag: 2.16.19-core
             ctx: .
     permissions:
       contents: read

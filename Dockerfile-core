@@ -1,7 +1,7 @@
 FROM python:3.12.15-alpine3.24
 
-ENV ANSIBLE_VER=2.21.5
-ENV EASZLAB_ANSIBLE_TAG=2.21.5-core
+ENV ANSIBLE_CORE_VER=2.16.19
+ENV EASZLAB_ANSIBLE_TAG=2.16.19-core
 
 RUN apk --no-cache add \
         bash \
