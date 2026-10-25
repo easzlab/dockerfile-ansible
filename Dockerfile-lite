@@ -11,7 +11,7 @@ RUN apk --no-cache add \
 
 RUN pip install --no-cache-dir --only-binary=:all: \
         ansible=="$ANSIBLE_VER" \
-        ansible-core==2.16.19 \
+        ansible-core=="$ANSIBLE_CORE_VER" \
        # Keep common, maintained collections and their declared dependencies
     && cd /usr/local/lib/python3.12/site-packages/ansible_collections \
     && find . -mindepth 2 -maxdepth 2 -type d \

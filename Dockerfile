@@ -11,7 +11,7 @@ RUN apk --no-cache add \
 
 RUN pip install --no-cache-dir --only-binary=:all: \
         ansible=="$ANSIBLE_VER" \
-        ansible-core==2.16.19 \
+        ansible-core=="$ANSIBLE_CORE_VER" \
        # Some module need '/usr/bin/python' exist
     && ln -s -f /usr/local/bin/python3 /usr/bin/python \
     && ln -s -f /usr/local/bin/python3 /usr/bin/python3 \
